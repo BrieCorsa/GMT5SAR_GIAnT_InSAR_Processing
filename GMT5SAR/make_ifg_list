@@ -1,0 +1,24 @@
+#!/bin/csh
+
+rm -f ifg.list
+
+ls -f merge/201*201*/unwrap_ll.grd > directories
+
+foreach pair ("`cat directories`")
+
+        set column1 = `echo $pair | awk '{print substr($1,7,8)}'`
+        set column2 = `echo $pair | awk '{print substr($1,16,8)}'`
+
+        set b1 = `grep $column1 F1/baseline_table.dat | awk '{print $4}'`
+        set b2 = `grep $column2 F1/baseline_table.dat | awk '{print $4}'`
+        echo $b1 $b2
+
+        set result = `echo "$b1 - $b2" | bc`
+
+        set column4 = 'SENTINEL-1A'
+
+        echo $column1 $column2 $result $column4 >> ifg.list
+
+end
+
+
