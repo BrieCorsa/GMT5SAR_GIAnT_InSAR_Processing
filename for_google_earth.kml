@@ -1,0 +1,26 @@
+# This code was written by Kriztina Kelevitz and Brie Corsa
+# To reference, please refer to:
+
+# 1. Kelevitz, K., Tiampo, K., Corsa, B. Improved Real-Time Natural Hazard Monitoring Automated DInSAR Time Series.
+# Remote Sensing 2021, 13(5), 867. https://doi.org/10.3390/rs13050867
+# 2. Corsa, B., Barba-Sevilla, M., Tiampo, K., Meertens, C. Integration of DInSAR time series and GNSS Data for continuous volcanic 
+# deformation monitoring and eruption early warning applications. Remote Sens. 2022, 14, 784. https://doi.org/10.3390/rs14030784
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+        <kml xmlns="http://www.opengis.net/kml/2.2">
+<Folder>
+	<GroundOverlay>
+		<Icon>
+			<href>Kilauea_test.png</href>
+		</Icon>
+		<LatLonBox>
+			<north>20.2888888889</north>
+			<south>18.9</south>
+			<east>-154.8</east>
+			<west>-156.066666667</west>
+		</LatLonBox>
+	</GroundOverlay>
+</Folder>
+</kml>
